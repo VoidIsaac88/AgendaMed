@@ -115,3 +115,5 @@ Critérios de aceitação do MVP:
 - Médico consegue visualizar e editar prontuário com registro de auditoria.
 - Notiϐicaçõ es enviadas ao paciente em eventos (conϐirmaçã o/cancelamento).
 
+
+-link- https://trello.com/b/7HXFcI3R/meu-quadro-do-trello
