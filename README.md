@@ -1,119 +1,144 @@
-AgendaMed — Entrega de Semana 5 (Documentação consolidada)
-Documento preparado com base nas informações fornecidas (resumo do produto, visão,
-público-alvo, personas, backlog MoSCoW, NFRs e tema). Estamos na quinta semana
-do projeto.
-1. Resumo do Projeto
-O AgendaMed é uma plataforma web para gestão de clínicas e consultórios que
-centraliza agendamentos, prontuários eletrônicos e relatórios administrativos. O sistema
-facilita o trabalho de atendentes, médicos, pacientes e gestores, oferecendo uma
-solução prática, eficiente e segura para o gerenciamento de consultas e dados médicos.
-2. Visão
-Simplificar a gestão de atendimentos médicos, garantindo agilidade, organização e
-segurança das informações em clínicas e consultórios. O AgendaMed visa reduzir erros
-de agendamento, otimizar o tempo dos profissionais e proporcionar uma experiência
-melhor para os pacientes.
-3. Público-Alvo e Personas
-Público-Alvo:
-- Atendentes de clı́nicas (organizar consultas).
-- Médicos (acesso a prontuários e histó rico).
-- Pacientes (agendar/remarcar/cancelar consultas).
-- Gestores (relató rios administrativos).
-Personas:
-- João Silva — Paciente, 35 anos: quer agendar e cancelar consultas pelo celular com
-rapidez.
-- Ana Souza — Atendente, 28 anos: precisa evitar conϐlitos de horários e organizar a agenda
-dos médicos.
-- Carlos Mendes — Médico, 45 anos: acessa prontuários e mantém histó rico atualizado.
-- Maria Oliveira — Gestora, 50 anos: monitora relató rios administrativos e controle da
-clı́nica.
-4. Escopo do Projeto
-Incluído (escopo inicial):
-- Cadastro e autenticação de usuá rios (pacientes, médicos, atendentes, gestores).
-- Agendamento, cancelamento e remarcaçã o de consultas.
-- Visualização de agenda por proϐissional (dia/semana).
-- Controle de prontuá rios eletrô nicos com acesso restrito.
-- Relató rios administrativos básicos.
-- Notiϐicaçõ es de conϐirmaçã o e cancelamento.
-Não incluído (fora do escopo inicial):
-- Pagamento online integrado.
-- Telemedicina (vı́deo).
-- Integraçã o com Google Agenda / Outlook / convênios.
-- Relató rios ϐinanceiros avançados.
-5. Principais Funcionalidades (Resumo)
-- Cadastro/gerenciamento de usuários e perϐis.
-- Agenda por proϐissional (visualizaçã o e bloqueio de horá rios).
-- Agendamento pelo paciente (sujeito a aprovação) e por recepçã o.
-- Conϐirmação automá tica (e manual) e cancelamento.
-- Prontuá rio eletrô nico simples com campos para anotaçõ es, alergias e histó rico de
-consultas.
-- Notiϐicaçõ es por e-mail/SMS (conϐirmaçã o, lembrete, cancelamento).
-- Relató rios administrativos (quantidade de consultas, cancelamentos, ocupaçã o por
-perı́odo).
-6. Backlog Priorizado — MoSCoW (versão Semana 5)
-Must Have (M) — imprescindível (MVP):
-- M1: Cadastro e autenticaçã o de usuá rios (pacientes, médicos, atendentes, gestores).
-- M2: Agendamento, cancelamento e remarcação de consultas.
-- M3: Visualização da agenda por proϐissional (dia/semana) e gestão de conϐlitos de
-horários.
-- M4: Acesso restrito a prontuá rios (somente proϐissionais autorizados).
-- M5: Notiϐicaçõ es (conϐirmaçã o/cancelamento/reminder).
-Should Have (S) — importante, mas pode ficar para próximo ciclo:
-- S1: Relató rios administrativos básicos (agenda por perı́odo, taxa de comparecimento).
-- S2: Busca por médico, especialidade e ϐiltro por data.
-Could Have (C) — desejável / nice-to-have:
-- C1: Histó rico detalhado de agendamentos para pacientes (acesso na conta).
-- C2: Filtros avançados na visualizaçã o da agenda (por sala, convênio, etc.).
-Won’t Have (W) — fora do escopo agora:
-- W1: Pagamento online integrado.
-- W2: Telemedicina (vı́deo).
-- W3: Integração com agendas externas (Google/Outlook).
-7. Histórias de Usuário (exemplos)
-1. Agendamento de Consulta (Paciente): Como paciente, quero agendar uma consulta em
-horário disponı́vel para receber atendimento.
-2. Cancelamento/Remarcaçã o (Paciente): Como paciente, quero cancelar ou remarcar
-consultas para reorganizar meus compromissos.
-3. Cadastro de Prontuário (Médico): Como médico, quero registrar informaçõ es do paciente
-para manter o histó rico atualizado.
-4. Controle de Agenda (Atendente): Como atendente, quero visualizar e organizar os
-agendamentos para evitar conϐlitos.
-5. Relató rios Administrativos (Gestor): Como gestor, quero gerar relató rios bá sicos para
-acompanhar o desempenho da clı́nica.
-8. Requisitos Não-Funcionais (NFRs)
-Usabilidade:
-- Treinamento do atendente ≤ 40 minutos.
-- Interface responsiva para desktop e tablet; UX simples para telas de recepçã o.
-Desempenho:
-- Agenda (lista diá ria) deve carregar em ≤ 3 segundos sob carga normal.
-- Suportar ao menos 100 usuários simultâneos no sistema (meta inicial).
-Segurança:
-- Autenticação por usuário/senha; perϐis e permissõ es (roles) distintos.
-- Dados sensı́veis (prontuá rios) armazenados de forma criptografada em descanso;
-comunicação TLS.
-- Logs de auditoria para acesso e edição de prontuá rios (quem fez o quê e quando).
-Confiabilidade / Disponibilidade:
-- Disponibilidade mı́nima de 99% no horá rio comercial.
-- Backups automáticos diá rios e plano de restore documentado.
-Escalabilidade:
-- Arquitetura preparada para expansã o (API REST/GraphQL; separaçã o de camadas)
-9. Diagrama de Casos de Uso (placeholder)
-
-<img width="523" height="723" alt="Captura de tela 2025-09-03 194626" src="https://github.com/user-attachments/assets/26db521c-ddd4-44a0-92f1-ca2fbeb49440" />
-
-
-10. Recomendação para MVP e Sprints (sugerido)
-Definição de MVP (mínimo produto viável): MVP = todas as histórias Must-Have (M1–
-M5) entregues de forma que uma clínica possa operar agendamentos,
-confirmar/cancelar e manter prontuários básicos com notificações.
-Sugestão de divisão em 2 sprints curtos (ex.: 2 ou 3 semanas cada):
-- Sprint 1: Cadastro/autenticação (M1); Visualização de agenda e ló gica de bloqueio de
-horários (M3); Agendamento bá sico pelo atendente (parte de M2).
-- Sprint 2: Agendamento pelo paciente (M2), conϐirmaçõ es e cancelamentos (M5); Controle
-de acesso a prontuá rios e interface de médico para adicionar anotaçõ es (M4); Ajustes ϐinos
-nos NFRs e relató rios básicos (S1 se houver tempo).
-Critérios de aceitação do MVP:
-- Usuá rio atendente consegue registrar/agendar/cancelar sem erros.
-- Médico consegue visualizar e editar prontuário com registro de auditoria.
-- Notiϐicaçõ es enviadas ao paciente em eventos (conϐirmaçã o/cancelamento).
-
-
--link- https://trello.com/b/7HXFcI3R/meu-quadro-do-trello
+Documento de Visão e Escopo do Projeto
+AgendaMed - Gestão de Clínicas e Consultórios
+Equipe de Produto: Amanda, Carlos André Gama Santos Silva, Gabriel Alcantara Ribeiro, Isaac Silva
+Morais, Jose Marcio Silva Pinho e Marcos Vinícius Cardoso de Araújo
+Product Owner: Isaac Silva Morais
+Sumário
+1. Introdução
+2. Personas e Público-Alvo
+3. Requisitos Funcionais
+4. Requisitos Não Funcionais
+5. Recomendações para a Equipe de Desenvolvimento
+1. Introdução
+1.1. Visão Geral do Projeto
+O projeto AgendaMed visa desenvolver uma plataforma web para modernizar a gestão de
+clínicas e consultórios, substituindo processos manuais e descentralizados por uma
+operação digital, eficiente e segura. O sistema centraliza agendamentos, prontuários
+eletrônicos e relatórios administrativos, com o objetivo de otimizar o tempo dos
+profissionais, reduzir erros operacionais e melhorar a experiência de agendamento para os
+pacientes.
+1.2. Escopo do Projeto
+Funcionalidades DENTRO do Escopo:
+Cadastro e autenticação de usuários.
+Agendamento, cancelamento e remarcação.
+Visualização de agenda por profissional.
+Controle de prontuários eletrônicos.
+Relatórios administrativos básicos.
+Notificações de confirmação e lembrete.
+Funcionalidades FORA do Escopо:
+Sistema de pagamento online integrado.
+Funcionalidade de Telemedicina.
+Integração com agendas externas (Google/Outlook).
+Relatórios financeiros avançados.
+1.3. Glossário de Termos
+Prontuário Eletrônico (PEP): Registro digital das informações de saúde do paciente.
+Perfil de Acesso (Role): Conjunto de permissões que define o que cada tipo de usuário
+pode fazer.
+Conflito de Horário: Agendamento de duas ou mais consultas no mesmo horário para o
+mesmo profissional.
+Log de Auditoria: Registro de atividades em dados sensíveis para fins de segurança.
+2. Personas e Público-Alvo
+João Silva - Paciente, 35 anos: Quer agendar e gerenciar suas consultas de forma
+rápida pelo celular.
+Ana Souza - Atendente, 28 anos: Precisa de uma ferramenta para organizar as
+agendas e evitar erros.
+Dr. Carlos Mendes - Médico, 45 anos: Necessita de acesso rápido e seguro aos
+prontuários.
+Maria Oliveira - Gestora, 50 anos: Busca relatórios para monitorar o desempenho da
+clínica.
+3. Requisitos Funcionais
+3.1. Diagrama de Casos de Uso
+AgendaMed
+Marcar Consulta Checar Disponibilidade
+Check-in
+Cliente
+Cadastrar Cliente
+Cancelar Consulta Enviar Avisos
+Confirmar Consulta Verificar Conflito
+Registrar Pagamento
+Atendente
+Consultar Agenda
+Organizar Agenda Bloquear Horários
+Medico
+Login
+Anotar no Prontuário Genenciar Acessos
+Gestor
+Cadastrar Médico
+Notificador
+3.2. Product Backlog Priorizado (MoSCoW)
+ID HISTÓRIA DE USUÁRIO (RESUMIDA) PRIORIDADE
+M1 Realizar cadastro e login com perfis distintos Must-Have
+M2 Agendar, cancelar e remarcar consultas Must-Have
+M3 Visualizar agenda e gerenciar conflitos Must-Have
+M4 Acessar e editar prontuários com acesso restrito Must-Have
+M5 Enviar notificações de confirmação e lembrete Must-Have
+S1 Gerar relatórios administrativos básicos Should-Have
+S2 Buscar médicos por especialidade e filtrar datas Should-Have
+C1 Visualizar histórico de agendamentos na sua conta Could-Have
+C2 Usar filtros avançados na agenda (sala, convênio) Could-Have
+W1 Realizar pagamento online integrado Won't Have
+W2 Realizar consulta por vídeo (telemedicina) Won't Have
+W3 Integrar com agendas externas (Google/Outlook) Won't Have
+4. Requisitos Não Funcionais
+Usabilidade (USAB-01): O tempo de treinamento para um novo atendente deve ser inferior
+a 40 minutos.
+Desempenho (DESEM-01): A agenda diária deve carregar em menos de 3 segundos sob
+carga normal.
+Segurança (SEG-01): O acesso aos prontuários dos pacientes deve ser restrito apenas a
+usuários com perfil de "Médico".
+Disponibilidade (DISP-01): O sistema deve ter uma disponibilidade mínima de 99% em
+horário comercial.
+5. Recomendações para a Equipe de Desenvolvimento
+Esta seção finaliza a fase de especificação e serve como um guia para a equipe de
+desenvolvimento. Nossas sugestões visam alinhar o desenvolvimento com as prioridades
+do produto e antecipar possíveis desafios.
+5.1. Sugestão para o Mínimo Produto Viável (MVP)
+Recomendamos que o primeiro ciclo de desenvolvimento (Sprint 1) se concentre em
+entregar o fluxo operacional essencial para uma clínica. O objetivo é criar a versão mais
+simples do AgendaMed que já entrega valor real para os usuários principais (atendentes e
+médicos).
+Definição do MVP: O MVP deve permitir que uma clínica cadastre seus profissionais,
+gerencie a agenda, agende pacientes, realize confirmações/cancelamentos e mantenha
+um prontuário eletrônico básico. Essencialmente, são todas as histórias classificadas como
+"Must-Have" (M1 a M5) em nosso backlog.
+Plano Sugerido para Sprints:
+Sprint 1- O Coração da Agenda: O objetivo principal é "Permitir que uma atendente
+gerencie a agenda de um médico de forma 100% digital e funcional".
+Foco em: Cadastro e autenticação de usuários (M1).
+Visualização da agenda por profissional e gestão de conflitos (M3).
+Funcionalidades de agendamento, cancelamento e remarcação pela atendente (parte de M2).
+Acesso restrito a um prontuário simples para o médico (M4).
+Sprint 2 - Empoderando o Paciente e o Gestor: O foco seria expandir o sistema com
+as funcionalidades restantes do MVP e as mais importantes do "Should-Have".
+Foco em: Agendamento realizado pelo próprio paciente (restante de M2).
+Implementação robusta do sistema de notificações automáticas (M5).
+Desenvolvimento dos relatórios administrativos básicos para o gestor (S1).
+Implementação da busca por médico/especialidade (S2).
+Essa abordagem garante que, ao final do Sprint 1, já teremos um produto funcional que
+resolve a maior dor da clínica, mesmo que funcionalidades complementares ainda não
+estejam prontas.
+5.2. Principais Desafios Técnicos Previstos
+Acreditamos que os maiores desafios no desenvolvimento deste projeto serão:
+Lógica de Conflitos e Concorrência: Garantir que dois usuários (ex: dois atendentes ou
+um atendente e um paciente) não consigam agendar o mesmo horário
+simultaneamente. Isso exige um tratamento cuidadoso de transações no banco de
+dados para evitar condições de corrida (race conditions).
+Controle de Acesso: Implementar um sistema de perfis de usuário (roles) que garanta
+de forma segura que apenas médicos e assistentes possam visualizar e editar os
+prontuários dos pacientes.
+Desempenho da Agenda em Tempo Real: A visualização da agenda precisa ser
+atualizada para múltiplos usuários (médicos, atendentes) em tempo real. A solução
+deve ser performática para não sobrecarregar o sistema, especialmente em clínicas
+com muitos profissionais.
+5.3. Pontos de Atenção
+• Usabilidade da Tela da Atendente: A interface de agendamento é o coração do sistema
+e será usada intensivamente. Ela precisa ser extremamente ágil, clara e otimizada para
+minimizar cliques. Cada segundo economizado nesta tela impacta diretamente a
+produtividade da recepção.
+Consistência dos Dados do Prontuário: É fundamental garantir que todas as operações
+relacionadas a um prontuário (novas anotações, histórico de consultas) sejam atômicas e
+consistentes. A perda ou corrupção de dados médicos é um risco inaceitável.
+Confiança nas Notificações: O sistema de lembretes e confirmações por e-mail/SMS é
+vital para reduzir a taxa de não comparecimento (no-show). A integração com o serviço de
+envio deve ser robusta e possuir monitoramento para garantir que as mensagens estão
+sendo entregues.
